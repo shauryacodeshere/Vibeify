@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bajrangi</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
+      margin:0px;
+      padding:0px;
       background-color: black;
       color: white;
       font-family: Arial, sans-serif;
@@ -13,6 +16,13 @@
       /* padding: 0px; */
      
     }
+    
+
+    body a{
+      text-decoration: none;
+      color: white;
+    }
+
 
     .song {
       background-color: #1f1f1f;
@@ -120,6 +130,26 @@
   display: inline-block;
 }
 
+@media(max-width:800px){
+  a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .artist-name{
+    font-size:2.5rem;
+  }
+  .artist-img{
+    height: 200px;
+    width: 270px;
+    
+  }
+
+  .artist-playlist{
+    gap: 45px;
+  }
+}
+
 
   </style>
 </head>
@@ -149,7 +179,7 @@
   <div class="song" onclick="togglePlay('audio1', this)">
   <div class="song-info"><h3>1.Selfie Le Le Re</h3></div>
   <div class="play-btn"><i class="fas fa-play"></i></div>
-  <audio id="audio1" src="songs/Selfie Le Le Re' FULL VIDEO Song Pritam - Salman Khan  Bajrangi Bhaijaan  T-Series - T-Series.mp3"></audio>
+  <audio id="audio1" src="Selfie Le Le Re' FULL VIDEO Song Pritam - Salman Khan  Bajrangi Bhaijaan  T-Series - T-Series.mp3"></audio>
   </div>
 </a>
 
@@ -158,7 +188,7 @@
   <div class="song" onclick="togglePlay('audio2', this)">
     <div class="song-info"><h3>2.Bhar Do Jholi</h3></div>
     <div class="play-btn"><i class="fas fa-play"></i></div>
-    <audio id="audio2" src="songs/Bhar Do Jholi Meri' FULL VIDEO Song - Adnan Sami  Bajrangi Bhaijaan  Salman Khan Pritam - T-Series.mp3"></audio>
+    <audio id="audio2" src="Bhar Do Jholi Meri' FULL VIDEO Song - Adnan Sami  Bajrangi Bhaijaan  Salman Khan Pritam - T-Series.mp3"></audio>
   </div>
 </a>
 
@@ -166,7 +196,7 @@
   <div class="song" onclick="togglePlay('audio3', this)">
     <div class="song-info"><h3>3.Tu Jo Mila</h3></div>
     <div class="play-btn"><i class="fas fa-play"></i></div>
-    <audio id="audio3" src="songs/Tu Jo Mila' VIDEO Song - K.K. Pritam  Salman Khan, Nawazuddin, Harshaali  Bajrangi Bhaijaan - T-Series.mp3"></audio>
+    <audio id="audio3" src="Tu Jo Mila' VIDEO Song - K.K. Pritam  Salman Khan, Nawazuddin, Harshaali  Bajrangi Bhaijaan - T-Series.mp3"></audio>
     </div>
 </a>
 
@@ -174,7 +204,7 @@
     <div class="song" onclick="togglePlay('audio4', this)">
     <div class="song-info"><h3>4.Tu Chaihye</h3></div>
     <div class="play-btn"><i class="fas fa-play"></i></div>
-    <audio id="audio4" src="songs/Tu Chahiye FULL VIDEO Song - Atif Aslam Pritam  Bajrangi Bhaijaan  Salman Khan, Kareena Kapoor - T-Series.mp3"></audio>
+    <audio id="audio4" src="Tu Chahiye FULL VIDEO Song - Atif Aslam Pritam  Bajrangi Bhaijaan  Salman Khan, Kareena Kapoor - T-Series.mp3"></audio>
     </div>
 </a>
 

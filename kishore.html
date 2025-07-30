@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Kishore Kumar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    body {
+   body {
+      margin:0;
+      padding:0;
       background-color: black;
       color: white;
       font-family: Arial, sans-serif;
-      /* padding: 0px; */
-     
     }
 
     body a{
@@ -118,6 +119,25 @@
   display: inline-block;
 }
 
+@media(max-width:800px){
+  a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .artist-name{
+    font-size:2.5rem;
+  }
+  .artist-img{
+    height: 180px;
+    width: 290px;
+    
+  }
+
+  .artist-playlist{
+    gap: 45px;
+  }
+}
 
   </style>
 </head>

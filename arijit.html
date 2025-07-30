@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Arijit Singh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
+      margin:0;
+      padding:0;
       background-color: black;
       color: white;
       font-family: Arial, sans-serif;
@@ -25,6 +28,10 @@
 
     .song-info h3 {
       margin: 0;
+    }
+    .all{
+      gap:30px;
+      margin-top:25px;
     }
 
     .play-btn {
@@ -67,6 +74,7 @@
     height: 100px;
     background:linear-gradient(to bottom,  #5A3926,#312119);
     width: 100vw;
+
   }
 
   .playlist{
@@ -116,6 +124,26 @@ body a{
 }
 
 
+@media(max-width:800px){
+  a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .artist-name{
+    font-size:2.5rem;
+  }
+  .artist-img{
+    height: 200px;
+    width: 270px;
+    
+  }
+
+  .artist-playlist{
+    gap: 45px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -140,12 +168,12 @@ body a{
     <!-- <img src="arijit.png"> -->
   </div>
 
-
+  <div class="all">
   <a href="apnabanale.html">
   <div class="song" onclick="togglePlay('audio1', this)">
   <div class="song-info"><h3>1. Apna Bana Le</h3></div>
   <div class="play-btn"><i class="fas fa-play"></i></div>
-  <audio id="audio1" src="songs/ApnaBanaLe.mp3"></audio>
+  <audio id="audio1" src="ApnaBanaLe.mp3"></audio>
   </div>
   </a>
 
@@ -153,7 +181,7 @@ body a{
   <div class="song" onclick="togglePlay('audio2', this)">
     <div class="song-info"><h3>2.Ae Dil Hai Mushkil</h3></div>
     <div class="play-btn"><i class="fas fa-play"></i></div>
-    <audio id="audio2" src="songs/Arijit Singh  Ae Dil Hai Mushkil - Title Track  Lyrical Video  Ranbir Kapoor  Pritam Chakraborty.mp3"></audio>
+    <audio id="audio2" src="Arijit Singh  Ae Dil Hai Mushkil - Title Track  Lyrical Video  Ranbir Kapoor  Pritam Chakraborty.mp3"></audio>
   </div>
   </a>
 
@@ -161,7 +189,7 @@ body a{
   <div class="song" onclick="togglePlay('audio3', this)">
     <div class="song-info"><h3>3.Sajni</h3></div>
     <div class="play-btn"><i class="fas fa-play"></i></div>
-    <audio id="audio3" src="songs/Sajni (Lyrical Video)_ Arijit Singh, Ram Sampath  Laapataa Ladies   Aamir Khan Productions.mp3"></audio>
+    <audio id="audio3" src="Sajni (Lyrical Video)_ Arijit Singh, Ram Sampath  Laapataa Ladies   Aamir Khan Productions.mp3"></audio>
     </div>
   </a>
   
@@ -169,7 +197,7 @@ body a{
   <div class="song" onclick="togglePlay('audio4', this)">
     <div class="song-info"><h3>4.Satranga</h3></div>
     <div class="play-btn"><i class="fas fa-play"></i></div>
-    <audio id="audio4" src="songs/ANIMAL_ SATRANGA(Song) Ranbir Kapoor,RashmikaSandeep VArijit,Shreyas P,Siddharth-Garima Bhushan K.mp3"></audio>
+    <audio id="audio4" src="ANIMAL_ SATRANGA(Song) Ranbir Kapoor,RashmikaSandeep VArijit,Shreyas P,Siddharth-Garima Bhushan K.mp3"></audio>
   </div>
 </a>
   
@@ -177,7 +205,7 @@ body a{
   <div class="song" onclick="togglePlay('audio5', this)">
     <div class="song-info"><h3>5.Tujhe Kitna Chahne Lage</h3></div>
     <div class="play-btn"><i class="fas fa-play"></i></div>
-    <audio id="audio5" src="songs/Full Song_ Tujhe Kitna Chahne Lage  Kabir Singh  Mithoon Feat. Arijit Singh  Shahid K, Kiara A.mp3"></audio>
+    <audio id="audio5" src="Full Song_ Tujhe Kitna Chahne Lage  Kabir Singh  Mithoon Feat. Arijit Singh  Shahid K, Kiara A.mp3"></audio>
   </div>
   </a>
 
@@ -185,9 +213,10 @@ body a{
     <div class="song" onclick="togglePlay('audio6', this)">
     <div class="song-info"><h3>6.Tum hi ho</h3></div>
     <div class="play-btn"><i class="fas fa-play"></i></div>
-    <audio id="audio6" src="songs/Tum Hi Ho (Lyrics)Arijit SinghAashiqui 2@tseries.mp3"></audio>
+    <audio id="audio6" src="Tum Hi Ho (Lyrics)Arijit SinghAashiqui 2@tseries.mp3"></audio>
     </div>
   </a>
+  </div>
 
   
   <script>

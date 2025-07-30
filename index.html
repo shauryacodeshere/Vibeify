@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vibeify</title>
+    <link rel="icon" type="image/jpeg"   href="vibeify logo.jpeg" >
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
     <div class="navbar">
-        <div class="spotify-logo"><a href="#"><i class="fa-brands fa-spotify" style="color:#ffffff;"></i></a></div>
+        <div class="hamburger">
+          <i class="fa fa-bars"></i>
+        </div>  
+        <div class="spotify-logo"><a href="#"><img  class="lg" src='vibeify.png'></a></div>
         <div class="home-btn"><a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></div>
         <div class="search-box">
           <input type="text" id="searchInput" placeholder="What do you want to play?" class="search-input" />
   
             <i class="fas fa-search search-icon"></i>
         </div>
+           
   <div class="opt-wrapper">
   <div class="opt">
     <div class="opt1"><a href="premium.html">Premium</a></div>
@@ -35,7 +41,7 @@
 </div>
 
   <div class="container">
-  <div class="left-section">
+  <div class="left-section"  id="sidebar">
     <div class="lib"><h4>Your Library</h4>
       <div class="plus"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
     </div>
@@ -303,7 +309,7 @@
           </div>
 
             <div class="popularalbums">
-                  <h2>Popular albums and singles</h2>
+                  <h2>Popular albums</h2>
                   <a class="see-more">Show All</a> 
             </div>  
           

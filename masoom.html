@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Masoom Sharma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    body {
+   body {
+      margin:0;
+      padding:0;
       background-color: black;
       color: white;
       font-family: Arial, sans-serif;
-      text-decoration:none;
-      /* padding: 0px; */
-     
     }
 
     .song {
@@ -124,6 +124,25 @@
   display: inline-block;
 }
 
+@media(max-width:800px){
+  a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .artist-name{
+    font-size:2.5rem;
+  }
+  .artist-img{
+    height: 200px;
+    width: 320px;
+    
+  }
+
+  .artist-playlist{
+    gap: 45px;
+  }
+}
 
   </style>
 </head>
@@ -168,7 +187,7 @@
   <div class="song" onclick="togglePlay('audio3', this)">
     <div class="song-info"><h3>3.Lofar</h3></div>
     <div class="play-btn"><i class="fas fa-play"></i></div>
-    <audio id="audio3" src="songs/Lofar Masoom Sharma (Official Video) Swara verma  Pinna Music  New Haryanvi Song Haryanvi 2025 - Shikaari Music.mp3"></audio>
+    <audio id="audio3" src="Lofar Masoom Sharma (Official Video) Swara verma  Pinna Music  New Haryanvi Song Haryanvi 2025 - Shikaari Music.mp3"></audio>
   </div>
   </a>
 

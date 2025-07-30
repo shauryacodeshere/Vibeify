@@ -80,7 +80,7 @@
     <input type="range" id="progress" value="0" class="progress-bar">
     <div class="time">
       <span id="current">0:00</span>
-      <span id="duration">-0:00</span>
+      <span id="duration">0:00</span>
     </div>
 
     <div class="controls">
@@ -89,7 +89,7 @@
       <button id="next"><i class="fas fa-forward"></i></button>
     </div>
 
-    <audio id="audio" autoplay></audio>
+    <audio id="audio" ></audio>
   </div>
 
   <script>
@@ -105,7 +105,7 @@
     document.getElementById('artist').textContent = artist;
     document.getElementById('album-art').src = image;
     document.getElementById('album-art').alt = title;
-    document.getElementById('audio').src = 'songs/' + audioFile;
+    document.getElementById('audio').src =  audioFile;
 
     const audio = document.getElementById('audio');
     const playBtn = document.getElementById('play');

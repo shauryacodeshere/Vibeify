@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Anuv Jain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
+      margin:0;
+      padding:0;
       background-color: black;
       color: white;
       font-family: Arial, sans-serif;
-      /* padding: 0px; */
-     
     }
 
     body a{
@@ -118,6 +119,26 @@
   display: inline-block;
 }
 
+@media(max-width:800px){
+  a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .artist-name{
+    font-size:2.5rem;
+  }
+  .artist-img{
+    height: 200px;
+    width: 270px;
+    
+  }
+
+  .artist-playlist{
+    gap: 45px;
+  }
+}
+
 
   </style>
 </head>
@@ -148,7 +169,7 @@
   <div class="song" onclick="togglePlay('audio1', this)">
     <div class="song-info"><h3>1.Husn</h3></div>
     <div class="play-btn"><i class="fas fa-play"></i></div>
-    <audio id="audio1" src="songs/Anuv Jain - HUSN (Official Video).mp3"></audio>
+    <audio id="audio1" src="Anuv Jain - HUSN (Official Video).mp3"></audio>
   </div>
 </a>
 

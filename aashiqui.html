@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aashiqui</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
+      margin:0px;
+      padding:0px;
       background-color: black;
       color: white;
       font-family: Arial, sans-serif;
@@ -122,6 +125,26 @@
   display: inline-block;
 }
 
+@media(max-width:800px){
+  a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .artist-name{
+    font-size:2.5rem;
+  }
+  .artist-img{
+    height: 200px;
+    width: 270px;
+    
+  }
+
+  .artist-playlist{
+    gap: 45px;
+  }
+}
+
 
   </style>
 </head>
@@ -151,7 +174,7 @@
   <div class="song" onclick="togglePlay('audio1', this)">
   <div class="song-info"><h3>1.Sunn Raha hai na</h3></div>
   <div class="play-btn"><i class="fas fa-play"></i></div>
-  <audio id="audio1" src="songs/Sunn Raha Hai Na Tu Aashiqui 2 Full Song With Lyrics  Aditya Roy Kapur, Shraddha Kapoor - T-Series.mp3"></audio>
+  <audio id="audio1" src="Sunn Raha Hai Na Tu Aashiqui 2 Full Song With Lyrics  Aditya Roy Kapur, Shraddha Kapoor - T-Series.mp3"></audio>
   </div>
 </a>
 
@@ -159,7 +182,7 @@
   <div class="song" onclick="togglePlay('audio2', this)">
     <div class="song-info"><h3>2.Tum Hi Ho</h3></div>
     <div class="play-btn"><i class="fas fa-play"></i></div>
-    <audio id="audio2" src="songs/Tum Hi Ho Aashiqui 2 Full Song With Lyrics  Aditya Roy Kapur, Shraddha Kapoor - T-Series.mp3"></audio>
+    <audio id="audio2" src="Tum Hi Ho Aashiqui 2 Full Song With Lyrics  Aditya Roy Kapur, Shraddha Kapoor - T-Series.mp3"></audio>
   </div>
 </a>
 
@@ -168,7 +191,7 @@
   <div class="song" onclick="togglePlay('audio3', this)">
     <div class="song-info"><h3>3.Chahun Main Yana</h3></div>
     <div class="play-btn"><i class="fas fa-play"></i></div>
-    <audio id="audio3" src="songs/Chahun Main Ya Naa Full Video Song Aashiqui 2  Aditya Roy Kapur, Shraddha Kapoor - T-Series.mp3"></audio>
+    <audio id="audio3" src="Chahun Main Ya Naa Full Video Song Aashiqui 2  Aditya Roy Kapur, Shraddha Kapoor - T-Series.mp3"></audio>
     </div>
 </a>
 
